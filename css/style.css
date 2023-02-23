@@ -1,5 +1,5 @@
 .main-page{
-  width: 90%;
+  width: 70%;
   height: 100%;
   margin: auto;
 }
@@ -89,6 +89,7 @@
 
 .side-information div {
   margin: 20px;
+  word-break: break-all;
 }
 
 .main-photos {
@@ -97,4 +98,28 @@
   margin-top: 30px;
   border: 2px solid #eee;
   border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.showing {
+  z-index: 1;
+  opacity: 1;
 }

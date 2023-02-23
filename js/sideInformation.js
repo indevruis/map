@@ -34,12 +34,3 @@ information.innerHTML = `
   `;
 
 document.querySelector('.main-contents').appendChild(information);
-
-const photos = document.createElement('div');
-
-photos.className = 'main-photos';
-photos.innerHTML  = `
-  <img src="">
-  `;
-
-document.querySelector('.main-contents').appendChild(photos);
