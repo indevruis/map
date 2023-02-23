@@ -1,3 +1,5 @@
+
+
 const navBtn = document.querySelectorAll('.navBtn');
 
 navBtn.forEach((btn)=>{
