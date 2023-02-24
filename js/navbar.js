@@ -2,7 +2,7 @@ const navbar = document.createElement('div');
 navbar.className = 'navbar';
 navbar.innerHTML = `
   <a>
-  <div class="navBtn">
+  <div class="navBtn onclick-navBtn">
     <i class="far fa-user"></i>
     <span>Profile</span>
   </div>
@@ -21,7 +21,7 @@ navbar.innerHTML = `
   </a>
   `;
 
-document.querySelector('main-navbar').appendChild(navbar);
+document.querySelector('.main-navbar').appendChild(navbar);
 
 const navBtn = document.querySelectorAll('.navBtn');
 

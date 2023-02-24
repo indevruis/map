@@ -1,4 +1,4 @@
-const birthday = '2002.02.04';
+const birthday = '2003.02.04';
 const work = '학생';
 const website = 'https://github.com/indevruis';
 const about = '그 외 정보';

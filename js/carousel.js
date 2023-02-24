@@ -1,22 +1,20 @@
-const photos = document.createElement('div');
+const photo = document.createElement('div');
+const photos = ["./img/Fukuoka.jpg", "./img/Osaka.jpg", "./img/KotaKinabalu.jpg", "./img/Kurogawa.jpg"];
 
-photos.className = 'main-photos';
-photos.innerHTML  = `
-  <div class="slide-box">
-    <img src="./img/Fukuoka.jpg">
-  </div>
-  <div class="slide-box">
-    <img src="./img/Osaka.jpg">
-  </div>
-  <div class="slide-box">
-    <img src="./img/KotaKinabalu.jpg">
-  </div>
-  <div class="slide-box">
-    <img src="./img/Kurogawa.jpg"
-  </div>
-  `;
+const paintPhotos = () => {
+  return photos.map(src => {
+    return `
+      <div class="slide-box">
+        <img src=${src}>
+      </div>
+    `;
+  }).join("");
+}
 
-document.querySelector('.main-contents').appendChild(photos);
+photo.className = 'main-photos';
+photo.innerHTML  = paintPhotos();  
+
+document.querySelector('.main-contents').appendChild(photo);
 
 const showingClass = "showing";
 const firstSlide = document.querySelectorAll('.slide-box')[0];
