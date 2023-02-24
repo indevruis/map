@@ -1,5 +1,5 @@
 const navbar = document.createElement('div');
-navbar.className = 'navbar';
+navbar.className = 'main-navbar';
 navbar.innerHTML = `
   <a>
   <div class="navBtn onclick-navBtn">
@@ -21,7 +21,7 @@ navbar.innerHTML = `
   </a>
   `;
 
-document.querySelector('.main-navbar').appendChild(navbar);
+document.querySelector('.main-page-navbar').appendChild(navbar);
 
 const navBtn = document.querySelectorAll('.navBtn');
 
@@ -34,7 +34,7 @@ navBtn.forEach((btn)=>{
   })
 })
 
-document.querySelector('.navbar').addEventListener('click', (e) => {
+document.querySelector('.main-navbar').addEventListener('click', (e) => {
   const target = e.target.textContent;
   const icon = e.target.classList.value;
   document.querySelector('.side-information').classList.add('block');

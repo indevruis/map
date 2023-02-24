@@ -36,6 +36,12 @@ mainProfile.innerHTML = `
         <span>${userInformation.introduce}</span>
       </div>
     </li>
+    <li>
+      <div class="location">
+        <i class="fa-sharp fa-solid fa-location-dot"></i>
+        <p>부산 동구</p>
+      </div>
+    </li>
   </ul>
   </div>
   <div class="follow-box">
