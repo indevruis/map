@@ -42,6 +42,7 @@ document.querySelector('.main-navbar').addEventListener('click', (e) => {
 
     pages.forEach((page)=>{
       document.querySelector(page).classList.add('block');
+      document.querySelector('.main-contents').classList.remove('block');
     })
 
     if (target === 'navBtn profile-btn') {
