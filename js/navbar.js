@@ -33,3 +33,18 @@ navBtn.forEach((btn)=>{
     btn.classList.add('onclick-navBtn')
   })
 })
+
+document.querySelector('.navbar').addEventListener('click', (e) => {
+  const target = e.target.textContent;
+  const icon = e.target.classList.value;
+  document.querySelector('.side-information').classList.add('block');
+  document.querySelector('.main-photos').classList.add('block');
+    if (target === 'Profile' || icon === 'far fa-user') {
+      document.querySelector('.side-information').classList.remove('block');
+      document.querySelector('.main-photos').classList.remove('block');
+    } else if (target === 'Posting' || icon === 'fas fa-th') {
+      // Posting 클릭 이벤트 핸들러 처리
+    } else if (target === 'Map' || icon === 'fas fa-map-marker-alt') {
+      // Map 클릭 이벤트 핸들러 처리
+    }
+});
