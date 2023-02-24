@@ -1,7 +1,8 @@
 const userInformation = {
   id: 'indevruis',
   name: '서윤',
-  introduce: '게이머'
+  introduce: '게이머',
+  location: '부산 동구'
 }
 
 const user = {
@@ -39,7 +40,7 @@ mainProfile.innerHTML = `
     <li>
       <div class="location">
         <i class="fa-sharp fa-solid fa-location-dot"></i>
-        <p>부산 동구</p>
+        <p>${userInformation.location}</p>
       </div>
     </li>
   </ul>

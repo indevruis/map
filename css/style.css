@@ -115,6 +115,7 @@ body, html,.main-background {
 .onclick-navBtn {
   color: #6fbaf8;
   font-weight: bolder;
+  border-bottom: 2px solid #6fbaf8;
 }
 
 .main-navbar div {
@@ -133,8 +134,10 @@ body, html,.main-background {
   width: 30%;
   height: 350px;
   margin: 30px 30px 0 0;
+  padding: 10px;
   background-color: white;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .side-information div {

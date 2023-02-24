@@ -1,8 +1,8 @@
 const navbar = document.createElement('div');
 navbar.className = 'main-navbar';
 navbar.innerHTML = `
-  <a>
-  <div class="navBtn onclick-navBtn">
+  <a class="onclick-navBtn">
+  <div class="navBtn">
     <i class="far fa-user"></i>
     <span>Profile</span>
   </div>
@@ -28,9 +28,9 @@ const navBtn = document.querySelectorAll('.navBtn');
 navBtn.forEach((btn)=>{
   btn.addEventListener('click', ()=>{
     navBtn.forEach((rmbtn)=>{
-      rmbtn.classList.remove('onclick-navBtn');
+      rmbtn.parentNode.classList.remove('onclick-navBtn');
     })
-    btn.classList.add('onclick-navBtn')
+    btn.parentNode.classList.add('onclick-navBtn')
   })
 })
 

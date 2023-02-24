@@ -9,6 +9,7 @@ information.innerHTML = `
     <ul>
       <li>
         <div>
+          <i class="fa-solid fa-cake-candles"></i>
           Birthday
           <span>${birthday}</span>
         </div>
