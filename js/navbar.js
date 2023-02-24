@@ -39,7 +39,7 @@ navBtn.forEach((btn)=>{
 
 document.querySelector('.main-navbar').addEventListener('click', (e) => {
   const target = e.target.closest('.navBtn').className;
-  
+
     pages.forEach((page)=>{
       document.querySelector(page).classList.add('block');
     })
@@ -48,6 +48,7 @@ document.querySelector('.main-navbar').addEventListener('click', (e) => {
       document.querySelector('.side-information').classList.remove('block');
       document.querySelector('.main-photos').classList.remove('block');
     } else if (target === 'navBtn posting-btn') {
+      document.querySelector('.main-contents').classList.add('block');
       document.querySelector('.grid').classList.remove('block');
     } else if (target === 'navBtn map-btn') {
       document.querySelector('.map').classList.remove('block');      

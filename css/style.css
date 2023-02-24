@@ -2,10 +2,12 @@ body, html,.main-background {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #f7f9fc;
 }
 
-.main-background {
-  background-color: #f7f9fc;
+.side-information a, .side-information a:visited {
+  color: #c5c5c5;
+  text-decoration: none;
 }
 
 .main-background, .main-page {
@@ -49,7 +51,7 @@ body, html,.main-background {
 
 .location i {
   float: left;
-  margin: 0 5px;
+  margin: 0 5px 0 0;
   color: #6fbaf8;
 }
 
@@ -99,6 +101,7 @@ body, html,.main-background {
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  font-size: 17px;
 }
 
 .follow-box span {
@@ -118,8 +121,12 @@ body, html,.main-background {
   border-bottom: 2px solid #6fbaf8;
 }
 
-.main-navbar div {
-  margin: 20px 30px;
+.navBtn {
+  padding: 20px 30px;
+}
+
+.navBtn {
+  box-sizing: border-box;
 }
 
 .main-contents {
@@ -169,6 +176,7 @@ body, html,.main-background {
 
 .slide-box img {
   width: 100%;
+  margin: auto;
   object-fit: cover;
 }
 
@@ -179,4 +187,9 @@ body, html,.main-background {
 
 .block {
   display: none;
+}
+
+.user-id {
+  font-size: 18px;
+  font-weight: bold;
 }

@@ -16,18 +16,21 @@ information.innerHTML = `
       </li>
       <li>
         <div>
+          <i class="fa-solid fa-briefcase"></i>
           Work
           <span>${work}</span>
         </div>
       </li>
       <li>
         <div>
+          <i class="fa-solid fa-link"></i>
           Website
           <span><a href="${website}">${website}</a></span>
         </div>
       </li>
       <li>
         <div>
+          <i class="fa-solid fa-magnifying-glass"></i>
           About
           <span>${about}</span>
       </li>

@@ -21,19 +21,16 @@ mainProfile.innerHTML = `
   <ul>
     <li>
       <div>
-        아이디
-        <span>${userInformation.id}</span>
+        <span class="user-id">${userInformation.id}</span>
       </div>
     </li>
     <li>
       <div>
-        이름
         <span>${userInformation.name}</span>
       </div>
     </li>
     <li>
       <div>
-        소개
         <span>${userInformation.introduce}</span>
       </div>
     </li>
