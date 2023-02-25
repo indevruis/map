@@ -45,13 +45,13 @@ document.querySelector('.main-navbar').addEventListener('click', (e) => {
       document.querySelector('.main-contents').classList.remove('block');
     })
 
-    if (target.contain('profile-btn')) {
+    if (target.contains('profile-btn')) {
       document.querySelector('.side-information').classList.remove('block');
       document.querySelector('.main-photos').classList.remove('block');
-    } else if (target.contain('posting-btn')) {
+    } else if (target.contains('posting-btn')) {
       document.querySelector('.main-contents').classList.add('block');
       document.querySelector('.grid').classList.remove('block');
-    } else if (target.contain('.map-btn')) {
+    } else if (target.contains('.map-btn')) {
       document.querySelector('.map').classList.remove('block');      
     }
 });
