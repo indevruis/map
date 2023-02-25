@@ -40,18 +40,18 @@ navBtn.forEach((btn)=>{
 document.querySelector('.main-navbar').addEventListener('click', (e) => {
   const target = e.target.closest('.navBtn').className;
 
-    pages.forEach((page)=>{
+  pages.forEach((page)=>{
       document.querySelector(page).classList.add('block');
       document.querySelector('.main-contents').classList.remove('block');
     })
 
-    if (target === 'navBtn profile-btn') {
+    if (target.contain('profile-btn')) {
       document.querySelector('.side-information').classList.remove('block');
       document.querySelector('.main-photos').classList.remove('block');
-    } else if (target === 'navBtn posting-btn') {
+    } else if (target.contain('posting-btn')) {
       document.querySelector('.main-contents').classList.add('block');
       document.querySelector('.grid').classList.remove('block');
-    } else if (target === 'navBtn map-btn') {
+    } else if (target.contain('.map-btn')) {
       document.querySelector('.map').classList.remove('block');      
     }
 });
