@@ -83,3 +83,7 @@ li {
   font-size: 30px;
   color: #6fbaf8;
 }
+
+.checked {
+  color: #6fbaf8;
+}

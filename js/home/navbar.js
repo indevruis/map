@@ -51,7 +51,7 @@ document.querySelector('.main-navbar').addEventListener('click', (e) => {
     } else if (target.includes('posting-btn')) {
       document.querySelector('.main-contents').classList.add('block');
       document.querySelector('.grid').classList.remove('block');
-    } else if (target.includes('.map-btn')) {
-      document.querySelector('.map').classList.remove('block');      
+    } else if (target.includes('map-btn')) {
+      document.querySelector('.map').classList.remove('block');
     }
 });

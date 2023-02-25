@@ -1,4 +1,4 @@
-body, html,.main-background {
+body, html, .main-background {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -45,8 +45,9 @@ body, html,.main-background {
 
 .main-page{
   width: 70%;
-  height: 100%;
-  margin: auto;
+  height: 90%;
+  margin: 30px auto;
+  box-sizing: content-box;
 }
 
 .location i {
@@ -58,7 +59,6 @@ body, html,.main-background {
 .profile {
   width: 100%;
   height: 200px;
-  margin-top: 50px;
   background-color: white;
   border-radius: 10px;
   display: flex;
@@ -132,6 +132,7 @@ body, html,.main-background {
 .main-contents {
   width: 100%;
   height: 50%;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,8 +140,8 @@ body, html,.main-background {
 
 .side-information {
   width: 30%;
-  height: 350px;
-  margin: 30px 30px 0 0;
+  height: 100%;
+  margin-right: 20px;
   padding: 10px;
   background-color: white;
   border-radius: 10px;
@@ -154,8 +155,8 @@ body, html,.main-background {
 
 .main-photos {
   width: 70%;
-  height: 350px;
-  margin-top: 30px;
+  height: 100%;
+  /* margin-top: 30px; */
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
