@@ -1,0 +1,85 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.main-background {
+  width: 100%;
+  height: 100%;
+  background-color: #6fbaf8;
+}
+
+.logo {
+  font-size: 100px;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexC {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginPage {
+  width: 100%;
+  height: 100%;
+}
+
+.loginBox {
+  width: 400px;
+}
+
+.userInput{
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #6fbaf8;
+  border-radius: 10px;
+}
+
+input[type=text], input[type=passward] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #c5c5c5;
+  border-radius: 10px;
+}
+
+.loginBtn {
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6fbaf8;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px;
+}
+
+li {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.checkbox {
+  padding: 5px 0;
+  font-size: 12px;
+}
+
+.loginLogo {
+  font-size: 30px;
+  color: #6fbaf8;
+}
